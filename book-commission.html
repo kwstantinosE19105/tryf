@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commission Request | Ink & Toon Studio</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="inner-page">
+  <div class="film-grain"></div><div class="ink-blobs"><span></span><span></span><span></span></div><div class="scroll-progress"></div>
+  <nav class="topbar">
+    <a href="index.html" class="brand"><img src="images/logo.jpg" alt="logo"><span>Ink & Toon Studio</span></a>
+    <div class="nav-links"><a href="index.html">Αρχική</a><a href="portfolio.html">Portfolio</a><a href="price-list.html">Τιμές</a></div>
+    <button class="menu-toggle" aria-label="Άνοιγμα μενού"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <div class="mobile-menu"><a href="index.html">Αρχική</a><a href="portfolio.html">Portfolio</a><a href="price-list.html">Τιμές</a></div>
+
+  <header class="hero small-hero reveal">
+    <div class="hero-content">
+      <div class="hero-badge">Start a Project</div>
+      <h1>✒️ Commission / Tattoo Request</h1>
+      <p>Στείλε την ιδέα σου και θα λάβεις απάντηση με εκτίμηση τιμής.</p>
+    </div>
+  </header>
+
+  <main class="booking-page reveal">
+    <section class="booking-layout">
+      <div class="booking-panel toon-card">
+        <h2>Project Brief</h2>
+        <form class="booking-form" id="booking-form">
+          <div class="form-group"><label for="name">Όνομα</label><input id="name" type="text" placeholder="Το όνομά σου" required></div>
+          <div class="form-group"><label for="email">Email / Instagram</label><input id="email" type="text" placeholder="email ή @instagram" required></div>
+          <div class="form-group"><label for="service">Τύπος Project</label><select id="service" required><option value="">Επιλέξτε</option><option>Commission Illustration</option><option>Tattoo Design</option><option>Flash Sheet</option><option>Logo / Merch Art</option></select></div>
+          <div class="form-group"><label for="budget">Budget</label><select id="budget"><option>30€ - 60€</option><option>60€ - 120€</option><option>120€+</option><option>Not sure yet</option></select></div>
+          <div class="form-group"><label for="details">Περιγραφή</label><textarea id="details" rows="6" placeholder="Περιέγραψε ιδέα, μέγεθος tattoo, references, deadline..."></textarea></div>
+          <button class="btn-primary full-width" type="submit">Send Request</button>
+          <p id="confirmation" class="confirmation-message"></p>
+        </form>
+      </div>
+      <aside class="booking-panel toon-card">
+        <h2>Brief Summary</h2>
+        <div class="booking-summary" id="bookingSummary">Συμπλήρωσε τη φόρμα για να εμφανιστεί η σύνοψη.</div>
+        <p class="note">Tip: Για tattoo, γράψε σημείο σώματος, περίπου μέγεθος σε cm και αν το θες μόνο blackwork.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="reveal"><p></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

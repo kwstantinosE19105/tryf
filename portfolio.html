@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ink & Toon Studio</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="inner-page">
+  <div class="film-grain"></div>
+  <div class="ink-blobs"><span></span><span></span><span></span></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="topbar">
+    <a href="index.html" class="brand"><img src="images/logo.jpg" alt="logo"><span>Ink & Toon Studio</span></a>
+    <div class="nav-links">
+      <a href="index.html">Αρχική</a>
+      <a href="price-list.html">Τιμές</a>
+      <a href="book-commission.html" class="nav-cta">Commission</a>
+    </div>
+    <button class="menu-toggle" aria-label="Άνοιγμα μενού"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <div class="mobile-menu"><a href="index.html">Αρχική</a><a href="price-list.html">Τιμές</a><a href="book-commission.html">Commission</a></div>
+
+  <header class="hero small-hero reveal">
+    <div class="hero-content">
+      <div class="hero-badge">Portfolio</div>
+      <h1>🎞️ Portfolio</h1>
+      <p></p>
+      <div class="hero-buttons"><a href="index.html" class="btn-secondary">🏠 Αρχική</a><a href="book-commission.html" class="btn-primary">✒️ Start a Project</a></div>
+    </div>
+  </header>
+
+  <main class="portfolio-page reveal">
+    <section class="toon-card portfolio-panel">
+      <div class="section-heading centered-left">
+        <span class="section-tag">Gallery</span>
+        <h2>Selected Pieces</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tattoo">Tattoo</button>
+        <button class="filter-btn" data-filter="commission">Commission</button>
+        <button class="filter-btn" data-filter="flash">Flash</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card" data-category="tattoo"><img src="images/work-1.svg" alt="Devil flash"><span>1</span></article>
+        <article class="portfolio-card" data-category="commission"><img src="images/work-2.svg" alt="Cat commission"><span>2</span></article>
+        <article class="portfolio-card" data-category="flash"><img src="images/work-3.svg" alt="Skull flash"><span>3</span></article>
+        <article class="portfolio-card" data-category="tattoo"><img src="images/work-4.svg" alt="Crying heart"><span>4</span></article>
+        <article class="portfolio-card" data-category="commission"><img src="images/work-5.svg" alt="Moon face"><span>5</span></article>
+        <article class="portfolio-card" data-category="flash"><img src="images/work-6.svg" alt="Ink ghost"><span>6</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="reveal"><p></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
